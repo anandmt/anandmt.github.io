@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description"
-    content="Page for Text inout" />
-  <title>Text Input</title>
+  <script src="https://cdn.tiny.cloud/1/n30gjlmkb4qxfxsj1zwai5upcr0dmsc185v4efiub7f5ko1b/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
-
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root">
-<textarea rows="20" cols="70">
- test
+  <textarea>
+    Welcome to Anand's Editor!
   </textarea>
-  </div>
- 
+  <script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    });
+  </script>
 </body>
-
 </html>
